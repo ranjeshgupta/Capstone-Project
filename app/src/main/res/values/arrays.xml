@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="holding_menu">
+        <item>Edit Transaction</item>
+        <item>Add Transaction</item>
+        <item>Remove it</item>
+    </string-array>
+</resources>

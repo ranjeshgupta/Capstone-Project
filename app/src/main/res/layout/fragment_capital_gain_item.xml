@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/list_item_vertical_margin"
+    android:paddingBottom="@dimen/list_item_vertical_margin"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="@dimen/abc_list_item_padding_horizontal_material"
+    android:paddingRight="@dimen/abc_list_item_padding_horizontal_material"
+    android:background="@drawable/touch_selector"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/capital_gain_stock_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text"
+            android:text="Infosys Technologies"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/capital_gain_r_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text"
+            android:text="Realised G/L Rs.100"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/capital_gain_hold_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text"
+            android:gravity="end"
+            android:text="Rs. 10000"
+            />
+
+        <TextView
+            android:id="@+id/capital_gain_ur_gl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text"
+            android:gravity="end"
+            android:text="G/L Rs.1000"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

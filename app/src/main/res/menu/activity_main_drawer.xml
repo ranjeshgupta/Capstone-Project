@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/create_port"
+            android:title="@string/create_port" />
+        <item
+            android:id="@+id/add_investment"
+            android:title="@string/add_inv" />
+        <item
+            android:id="@+id/snapshot"
+            android:title="@string/snapshot" />
+        <item
+            android:id="@+id/transaction"
+            android:title="@string/transaction" />
+        <item
+            android:id="@+id/capital_gain"
+            android:title="@string/capital_gain" />
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share" />
+        </menu>
+    </item>
+</menu>

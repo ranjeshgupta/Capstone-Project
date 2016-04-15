@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stockportfoliomanager.app.AddInvestmentFragment"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/list_item_vertical_margin"
+    android:paddingBottom="@dimen/list_item_vertical_margin"
+    android:paddingLeft="@dimen/abc_list_item_padding_horizontal_material"
+    android:paddingRight="@dimen/abc_list_item_padding_horizontal_material"
+
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_add_inv">
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/stock_code"
+                style="@style/default_text"
+                android:id="@+id/txt_stock_code_label"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_edit_text"
+                android:id="@+id/txt_stock_code"
+                android:inputType="number"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_text"
+                android:text="@string/stock_name"
+                android:id="@+id/txt_stock_name"
+                android:layout_weight="2"/>
+
+            <!--<EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_edit_text"
+                android:id="@+id/edit_text_stock_name"
+                android:layout_weight="3"/>
+            -->
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewStockName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_edit_text"
+                android:layout_weight="3"
+                android:text="" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                style="@style/default_text"
+                android:id="@+id/txt_date"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_edit_text"
+                android:id="@+id/edit_text_date"
+                android:inputType="date"
+                android:focusable="false"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_text"
+                android:text="@string/no_of_units"
+                android:id="@+id/txt_unit"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_edit_text"
+                android:id="@+id/edit_text_unit"
+                android:inputType="number"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_text"
+                android:text="@string/brokerage"
+                android:id="@+id/txt_brokerage"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_edit_text"
+                android:id="@+id/edit_text_brokerage"
+                android:inputType="numberDecimal"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_text"
+                android:text="@string/price"
+                android:id="@+id/txt_price"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_edit_text"
+                android:id="@+id/edit_text_price"
+                android:inputType="numberDecimal"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_text"
+                android:layout_weight="2"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_button"
+                android:text="@string/create_hold_btn"
+                android:id="@+id/btn_add_inv"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="3"
+                />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

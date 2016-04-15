@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/list_item_vertical_margin"
+    android:paddingBottom="@dimen/list_item_vertical_margin"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="@dimen/abc_list_item_padding_horizontal_material"
+    android:paddingRight="@dimen/abc_list_item_padding_horizontal_material"
+    android:background="@drawable/touch_selector"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        >
+
+        <TextView
+            android:id="@+id/stock_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text"
+            android:textStyle="bold"
+            android:text="Tata Consultancy Services" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/list_item_text"
+                android:text="100 units"
+                />
+
+            <TextView
+                android:id="@+id/current_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/list_item_text"
+                android:text=" \@ Rs.310"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text"
+            android:text=" on 2012-01-01"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/hold_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text"
+            android:gravity="end"
+            android:text="Rs.1200" />
+
+        <TextView
+            android:id="@+id/value_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text"
+            android:gravity="end"
+            android:text="+200"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu_snapshot"
+            android:layout_gravity="top|end"
+            android:src="@drawable/dots_vertical"
+            />
+    </LinearLayout>
+</LinearLayout>
+

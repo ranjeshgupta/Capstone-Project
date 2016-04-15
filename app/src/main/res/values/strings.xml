@@ -1,0 +1,126 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Stock Portfolio Manager</string>
+    <string name="app_desc">A Complete Stock Investment Tracker</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_select_port">Select Portfolio</string>
+    <string name="select_port_label">Select Portfolio</string>
+    <string name="pref_port_key" translatable="false">port_id</string>
+
+    <string name="create_port">Create New Portfolio</string>
+    <string name="add_inv">Add Investment</string>
+    <string name="snapshot">Snapshot View</string>
+    <string name="transaction">Transaction View</string>
+    <string name="capital_gain">Capital Gain View</string>
+
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+
+    <string name="default_font" translatable="false">sans-serif-condensed</string>
+    <string name="default_medium_font" translatable="false">sans-serif-medium</string>
+
+    <string name="title_create_port">Create New Portfolio</string>
+    <string name="port_name_head">Portfolio Name</string>
+    <string name="port_name_default">My Portfolio</string>
+    <string name="create_port_btn">Create Portfolio</string>
+
+    <string name="title_add_investment">Add Investment</string>
+    <string name="stock_code">Stock Code</string>
+    <string name="stock_name">Stock Name</string>
+    <string name="date">Date</string>
+    <string name="no_of_units">No. of Shares</string>
+    <string name="brokerage">Brokerage (%)</string>
+    <string name="price">Price</string>
+    <string name="create_hold_btn">Create Holding</string>
+
+    <string name="no_network">The network is not available to fetch data.</string>
+    <string name="server_error">No information available. The server is not returning valid data. Please check for an updated version of Stock Portfolio Manager.</string>
+    <string name="empty_holding_list">You have not added any investment yet. Please add investment.</string>
+
+    <string name="no_data_stock_name">No matching name found. Please change your search.</string>
+    <string name="no_data_stock_price">Price is not available for given stock and date. Please type yours or change criteria.</string>
+
+    <string name="invalid_stock_code">Please select stock from autocomplete list.</string>
+    <string name="invalid_date">Please provide valid date.</string>
+    <string name="invalid_unit">No. of unit must be integer.</string>
+    <string name="invalid_price">Price must be numeric.</string>
+    <string name="success_msg_add_inv">Investment successfully added.</string>
+
+    <string name="invalid_dividend">Dividend must be numeric.</string>
+    <string name="invalid_offered">Offered must be integer.</string>
+    <string name="invalid_held">Held must be integer.</string>
+    <string name="success_msg_add_transaction">Transaction successfully added.</string>
+    <string name="success_msg_edit_transaction">Transaction successfully modified.</string>
+    <string name="error_mgs_add_transaction">Unable to add transaction.</string>
+    <string name="error_mgs_edit_transaction">Unable to edit transaction.</string>
+
+    <string name="title_transaction_view">Transaction View</string>
+    <string name="title_snapshot_view">Snapshot View</string>
+    <string name="title_capital_gain_view">Capital Gain View</string>
+
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type" translatable="false">com.example.stockportfoliomanager.app</string>
+    <string name="content_authority" translatable="false">com.example.stockportfoliomanager.app</string>
+
+    <!-- Key name for storing price status in SharedPreferences -->
+    <string name="pref_price_status_key" translatable="false">price-status</string>
+
+    <string name="signed_number_format" translatable="false">+#,###,###.00</string>
+    <string name="unsigned_number_format" translatable="false">#,###,###.00</string>
+    <string name="currency_symbol" translatable="false">Rs.</string>
+    <string name="unit_symbol">&#160;units</string>
+    <string name="price_prefix" translatable="false">&#160;\@&#160;</string>
+    <string name="date_prefix">as on&#160;</string>
+
+    <string name="percentage_symbol" translatable="false">%</string>
+    <string name="trans_date_prefix">on&#160;</string>
+    <string name="offered_prefix">&#160;offered&#160;</string>
+    <string name="held_prefix">&#160;for every hold&#160;</string>
+
+    <string name="r_gain_loss_prefix">Realised G/L&#160;</string>
+    <string name="ur_gain_loss_prefix">Ur G/L&#160;</string>
+
+    <string name="menu_view_transactions">View / edit transactions"</string>
+    <string name="menu_add_transaction">Add transaction</string>
+    <string name="menu_delete_holding">Remove this holding</string>
+    <string name="menu_edit_transaction">Edit this transaction</string>
+    <string name="menu_delete_transaction">Remove this transaction</string>
+
+    <string name="holding_id_error">Unable to get Holding ID to process.</string>
+    <string name="transaction_delete_error_zero_row">No any transaction has been deleted. Please try again!</string>
+    <string name="transaction_delete_error_adjustment_negative_unit">Your request could not be processed as turning to negative unit while adjusting your transactions.</string>
+    <string name="success_msg_delete_transaction">Transaction successfully deleted.</string>
+
+    <string name="title_activity_add_transaction">Add Transaction</string>
+    <string name="title_activity_edit_transaction">Edit Transaction</string>
+
+    <string name="add_transaction_btn">Add this transaction</string>
+    <string name="edit_transaction_btn">Edit this transaction</string>
+
+    <string name="offered">Offered</string>
+    <string name="held">Held</string>
+    <string name="div_amount">Dividend (Rs.)</string>
+    <string name="transaction_type">Trans Type</string>
+
+    <string name="return_to_view">Return to View</string>
+    <string name="date_format">yyyy-MM-dd</string>
+
+    <!-- Strings related to Widgets -->
+    <string name="title_widget_port_summary">Stock Portfolio Summary Widget</string>
+    <string name="widget_text_port_value">Port Value (Rs.)</string>
+    <string name="widget_text_port_changes">Gain/Loss (Rs.)</string>
+
+    <string name="title_widget_detail">Stock Portfolio Details Widget</string>
+
+    <!-- Strings related to Notification preference -->
+    <string name="pref_last_notification">last_notification</string>
+    <string name="format_notification">Port value: <xliff:g id="market_value">%1$s</xliff:g> Gain/Loss: <xliff:g id="gloss">%2$s</xliff:g></string>
+
+    <string name="ad_unit_banner_bottom" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="share_text">Manage and track multiple portfolios with beautiful snapshot view, 
+        transactions details, capital gain and quotes chart&#160;
+    </string>
+</resources>

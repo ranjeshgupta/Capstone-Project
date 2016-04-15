@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePortFragment"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/list_item_vertical_margin"
+    android:paddingBottom="@dimen/list_item_vertical_margin"
+    android:paddingLeft="@dimen/abc_list_item_padding_horizontal_material"
+    android:paddingRight="@dimen/abc_list_item_padding_horizontal_material"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/port_name_head"
+                style="@style/default_text"
+                android:id="@+id/txt_port_name"
+                android:layout_weight="2"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/port_name_default"
+                style="@style/default_edit_text"
+                android:id="@+id/edit_text_port_name"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/default_text"
+                android:layout_weight="2"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_new_port"
+                android:text="@string/create_port_btn"
+                android:id="@+id/btn_create_new_port"
+                style="@style/default_button"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="3"/>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
